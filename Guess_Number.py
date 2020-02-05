@@ -8,7 +8,7 @@ import random
 #======================================================
 secret_number_easy = random.randint(1, 10)
 secret_number_normal = random.randint(1, 50)
-secret_number_hard = random.randint(1,100)
+secret_number_hard = random.randint(1, 100)
 attempts_easy = 5
 attempts_normal = 10
 attempts_hard = 15
@@ -42,6 +42,9 @@ if level == 1:
         print("sorry you reached the maximum number of attempts......looser!!:)")
         print("The secret number was {}".format(secret_number_easy))
 
+#======================================================
+#LEVEL 2: Normal difficult
+#======================================================
 elif level == 2:
     for attempt in range(attempts_normal):
         count = count + 1
@@ -59,6 +62,9 @@ elif level == 2:
         print("sorry you reached the maximum number of attempts......looser!!:)")
         print("The secret number was {}".format(secret_number_normal))
 
+#======================================================
+#LEVEL 3: Hard difficult
+#======================================================
 elif level == 3:
     for attempt in range(attempts_hard):
         count = count + 1
